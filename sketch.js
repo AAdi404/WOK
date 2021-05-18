@@ -35,7 +35,7 @@ var rainImage1;
 var rainImage2;
 var winImage;
 var loseImage;
-//var song;
+var song;
 function preload(){
 cardImage1=loadImage("images/card1.png");
 cardImage2=loadImage("images/card2.png");
@@ -53,7 +53,7 @@ tower1Image=loadImage("images/tower1.png");
 tower2Image=loadImage("images/tower2.png");
 winImage=loadImage("images/win.png");
 loseImage=loadImage("images/lose.png");
-//song=loadSound("images/song.mp3");
+song=loadSound("images/song.mp3");
 }
 
 function setup(){
@@ -113,7 +113,7 @@ lose.visible=false;
 }
 function draw(){
   background("red");
-  //song.loop();
+  song.loop();
 correctCardPosition();
 createTroops();
 action();
